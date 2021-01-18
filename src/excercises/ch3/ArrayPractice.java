@@ -2,6 +2,7 @@ package excercises.ch3;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class ArrayPractice {
 
@@ -23,14 +24,14 @@ public class ArrayPractice {
         }
 
         String drSeuss = "I would not, could not, in a box. I would not, could not with a fox. I will not eat them in a house. I will not eat them with a mouse.";
-
         String[] drSeussArray = drSeuss.split(" ");
-
-        for (int i = 0; i < drSeussArray.length; i++) {
-            System.out.println(drSeussArray[i]);
-        }
-
         System.out.println(Arrays.toString(drSeussArray));
+        //for(String word : drSeuss) {
+           // System.out.println(word);
+       // }
+
+        String[] sentenceArray = drSeuss.split("\\.");
+        System.out.println(Arrays.toString(sentenceArray));
 
     }
 }
